@@ -1,0 +1,9 @@
+[project]
+name = "energyai-LLM pipeline"
+version = "0.1.0"
+description = "electric vehicle charging stations"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ruff>=0.12.5",
+]

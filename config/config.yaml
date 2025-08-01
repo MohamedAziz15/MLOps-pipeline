@@ -1,0 +1,17 @@
+# Target domain and task
+domain: "electric vehicle charging stations"
+task: "question_answering"
+
+# Base model for fine-tuning
+base_model:
+  name: "meta-llama/Meta-Llama-3-7B"
+  quantization: "4bit"
+  fine_tune: true
+
+# Data sources
+sources:
+  web:
+    ["https://afdc.energy.gov/fuels/electricity_locations.html"
+    ,"https://en.wikipedia.org/wiki/Charging_station"]
+  pdf:
+    - "./data/raw/EVChargingStation.pdf"
